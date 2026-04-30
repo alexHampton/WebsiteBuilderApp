@@ -1,19 +1,20 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Play, Monitor, Smartphone, BarChart3, Phone, Mail, MapPin } from "lucide-react"
+import { ArrowRight, Play, Smartphone, BarChart3, Phone, MapPin } from "lucide-react"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden pt-24 pb-20 lg:pt-32 lg:pb-24">
+    <section className="relative overflow-hidden pt-24 pb-20 lg:pt-32 lg:pb-26">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-transparent to-accent/5" />
+      <div className="absolute inset-0 bg-linear-to-br from-primary/10 via-transparent to-accent/10" />
+      <div className="absolute inset-x-0 top-20 h-72 bg-[radial-gradient(circle_at_center,_rgba(99,102,241,0.14),_transparent_65%)]" />
       
       <div className="container relative mx-auto px-4 sm:px-6">
         <div className="grid items-center gap-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-20">
           {/* Left content */}
           <div className="flex flex-col gap-7">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/15 bg-primary/10 px-4 py-2 text-sm font-medium text-primary shadow-sm">
+            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-white/80 px-4 py-2 text-sm font-medium text-primary shadow-sm backdrop-blur">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
@@ -22,7 +23,7 @@ export function HeroSection() {
             </div>
             
             <div className="space-y-5">
-              <h1 className="max-w-2xl text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-[4.25rem] lg:leading-[1.02]">
+              <h1 className="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-[4.2rem] lg:leading-[1.02]">
                 Get a Website That Actually{" "}
                 <span className="text-primary">Brings You More Calls</span>
               </h1>
@@ -33,11 +34,11 @@ export function HeroSection() {
             </div>
             
             <div className="flex flex-col gap-4 pt-2 sm:flex-row">
-              <Button size="lg" className="group gap-2 shadow-lg shadow-primary/25 transition-all hover:shadow-xl hover:shadow-primary/30">
+              <Button size="lg" className="group h-11 gap-2 rounded-lg bg-linear-to-r from-primary to-accent text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:shadow-xl hover:shadow-primary/35">
                 Get a Free Homepage Mockup
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
-              <Button variant="outline" size="lg" className="gap-2">
+              <Button variant="outline" size="lg" className="h-11 gap-2 rounded-lg border-white/70 bg-white/80 shadow-sm backdrop-blur hover:bg-white">
                 <Play className="h-4 w-4" />
                 View Example
               </Button>
@@ -63,7 +64,7 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative mx-auto max-w-xl lg:max-w-none">
               {/* Browser frame */}
-              <div className="rounded-[1.75rem] border border-border/70 bg-card/95 shadow-[0_30px_80px_-40px_rgba(99,102,241,0.55)] backdrop-blur">
+              <div className="rounded-[1.75rem] border border-white/70 bg-card/90 shadow-[0_45px_95px_-50px_rgba(79,70,229,0.55)] backdrop-blur-xl">
                 {/* Browser header */}
                 <div className="flex items-center gap-2 border-b px-5 py-4">
                   <div className="flex gap-1.5">
@@ -80,7 +81,7 @@ export function HeroSection() {
                 <div className="p-5">
                   {/* Mini nav */}
                   <div className="flex items-center justify-between pb-4">
-                    <div className="font-bold text-primary">PlumbRight Pro</div>
+                    <div className="font-semibold tracking-tight text-primary">PlumbRight Pro</div>
                     <div className="flex gap-3 text-xs text-muted-foreground">
                       <span>Services</span>
                       <span>About</span>
@@ -128,12 +129,12 @@ export function HeroSection() {
               </div>
               
               {/* Floating elements */}
-              <div className="absolute -bottom-4 -left-4 flex items-center gap-2 rounded-lg border bg-card px-3 py-2 shadow-lg">
+              <div className="absolute -bottom-4 -left-4 flex items-center gap-2 rounded-lg border border-white/80 bg-card/90 px-3 py-2 shadow-lg backdrop-blur">
                 <Smartphone className="h-4 w-4 text-primary" />
                 <span className="text-sm font-medium">Mobile Optimized</span>
               </div>
               
-              <div className="absolute -right-4 -top-4 flex items-center gap-2 rounded-lg border bg-card px-3 py-2 shadow-lg">
+              <div className="absolute -right-4 -top-4 flex items-center gap-2 rounded-lg border border-white/80 bg-card/90 px-3 py-2 shadow-lg backdrop-blur">
                 <BarChart3 className="h-4 w-4 text-primary" />
                 <span className="text-sm font-medium">+127% More Leads</span>
               </div>

@@ -53,9 +53,9 @@ export function FeaturesSection() {
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="group relative rounded-2xl border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="group relative rounded-2xl border border-white/70 bg-card/80 p-6 shadow-[0_14px_45px_-38px_rgba(17,24,39,0.85)] backdrop-blur transition-all duration-300 hover:-translate-y-1.5 hover:border-primary/25 hover:shadow-[0_24px_60px_-35px_rgba(79,70,229,0.45)]"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br from-primary/15 to-accent/15 text-primary transition-colors group-hover:from-primary group-hover:to-accent group-hover:text-primary-foreground">
                 <feature.icon className="h-6 w-6" />
               </div>
               <h3 className="mt-4 text-lg font-semibold text-foreground">{feature.title}</h3>

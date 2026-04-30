@@ -5,10 +5,13 @@ import { Button } from "@/components/ui/button"
 
 export function FinalCTASection() {
   return (
-    <section className="relative overflow-hidden bg-primary py-24 lg:py-32">
+    <section className="relative overflow-hidden border-t border-white/10 bg-[#0c1125] py-24 lg:py-32">
       {/* Background pattern */}
+      <div className="absolute inset-0 opacity-25">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(129,140,248,0.3),transparent_36%),radial-gradient(circle_at_80%_80%,rgba(56,189,248,0.22),transparent_35%)]" />
+      </div>
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-size-[40px_40px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-size-[52px_52px]" />
       </div>
       
       <div className="container relative mx-auto px-4 sm:px-6">
@@ -24,7 +27,7 @@ export function FinalCTASection() {
             <Button 
               size="lg" 
               variant="secondary" 
-              className="group gap-2 text-base shadow-lg transition-all hover:shadow-xl"
+              className="group h-11 gap-2 rounded-lg bg-white text-slate-900 shadow-lg transition-all hover:bg-white/90 hover:shadow-xl"
             >
               Get My Free Mockup
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -32,7 +35,7 @@ export function FinalCTASection() {
             <Button 
               size="lg" 
               variant="outline" 
-              className="gap-2 border-primary-foreground/30 bg-transparent text-base text-primary-foreground hover:bg-primary-foreground/10"
+              className="h-11 gap-2 rounded-lg border-white/30 bg-transparent text-base text-primary-foreground hover:bg-primary-foreground/10"
             >
               <Phone className="h-4 w-4" />
               Schedule a Call

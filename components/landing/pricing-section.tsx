@@ -63,14 +63,14 @@ export function PricingSection() {
           {plans.map((plan, index) => (
             <Card 
               key={index} 
-              className={`relative overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
+              className={`relative overflow-hidden bg-card/85 shadow-[0_20px_50px_-40px_rgba(15,23,42,0.95)] backdrop-blur transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_34px_75px_-40px_rgba(79,70,229,0.55)] ${
                 plan.popular 
-                  ? "border-2 border-primary shadow-lg shadow-primary/10" 
-                  : "border"
+                  ? "border-2 border-primary/60" 
+                  : "border border-white/70"
               }`}
             >
               {plan.popular && (
-                <div className="absolute -right-12 top-6 rotate-45 bg-primary px-12 py-1 text-xs font-semibold text-primary-foreground">
+                <div className="absolute -right-12 top-6 rotate-45 bg-linear-to-r from-primary to-accent px-12 py-1 text-xs font-semibold text-primary-foreground">
                   Most Popular
                 </div>
               )}
@@ -79,7 +79,7 @@ export function PricingSection() {
                 <div className="flex items-center gap-2">
                   <h3 className="text-xl font-bold text-foreground">{plan.name}</h3>
                   {plan.popular && (
-                    <Badge variant="secondary" className="gap-1 bg-primary/10 text-primary">
+                    <Badge variant="secondary" className="gap-1 border border-primary/20 bg-primary/10 text-primary">
                       <Star className="h-3 w-3 fill-current" />
                       Best Value
                     </Badge>
@@ -108,7 +108,7 @@ export function PricingSection() {
                 <p className="text-xs text-muted-foreground">{plan.note}</p>
                 
                 <Button 
-                  className={`w-full ${plan.popular ? "" : "bg-secondary text-secondary-foreground hover:bg-secondary/80"}`}
+                  className={`h-11 w-full rounded-lg ${plan.popular ? "bg-linear-to-r from-primary to-accent text-primary-foreground" : "bg-secondary text-secondary-foreground hover:bg-secondary/80"}`}
                   size="lg"
                 >
                   {plan.cta}

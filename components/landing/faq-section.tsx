@@ -49,12 +49,12 @@ export function FAQSection() {
         </div>
 
         <div className="mx-auto mt-14 max-w-3xl lg:mt-16">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="single" collapsible className="w-full rounded-2xl border border-white/70 bg-card/80 p-2 shadow-[0_20px_50px_-45px_rgba(15,23,42,0.9)] backdrop-blur">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`item-${index}`}
-                className="border-b border-border/50"
+                className="border-b border-border/50 px-4 last:border-b-0"
               >
                 <AccordionTrigger className="py-5 text-left text-base font-medium hover:text-primary hover:no-underline">
                   {faq.question}

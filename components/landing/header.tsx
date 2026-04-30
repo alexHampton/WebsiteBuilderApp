@@ -15,24 +15,24 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4">
-        <nav className="flex h-16 items-center justify-between">
+    <header className="sticky top-0 z-50 w-full pt-4">
+      <div className="container mx-auto px-4 sm:px-6">
+        <nav className="flex h-16 items-center justify-between rounded-2xl border border-white/70 bg-background/75 px-4 shadow-[0_20px_50px_-35px_rgba(17,24,39,0.45)] backdrop-blur-xl">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-primary to-accent text-primary-foreground shadow-sm">
               <span className="text-sm font-bold text-primary-foreground">LS</span>
             </div>
-            <span className="text-lg font-bold text-foreground">LocalSite Pro</span>
+            <span className="text-lg font-semibold tracking-tight text-foreground">LocalSite Pro</span>
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-7 md:flex">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="text-sm font-medium text-muted-foreground/90 transition-colors hover:text-foreground"
               >
                 {link.name}
               </a>
@@ -40,11 +40,11 @@ export function Header() {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden items-center gap-4 md:flex">
+          <div className="hidden items-center gap-3 md:flex">
             <Button variant="ghost" size="sm">
               Log In
             </Button>
-            <Button size="sm">Get Started</Button>
+            <Button size="sm" className="shadow-sm shadow-primary/25">Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -63,7 +63,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="border-t pb-4 md:hidden">
+          <div className="mt-2 rounded-2xl border border-white/70 bg-background/95 p-4 shadow-xl backdrop-blur md:hidden">
             <div className="flex flex-col gap-4 pt-4">
               {navLinks.map((link) => (
                 <a
