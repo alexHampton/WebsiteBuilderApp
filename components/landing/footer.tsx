@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-[#070b1a] py-14 text-slate-200">
+    <footer id="contact" className="border-t border-white/10 bg-[#070b1a] py-14 text-slate-200">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
@@ -25,7 +25,7 @@ export function Footer() {
               {["Features", "Pricing", "FAQ", "Contact"].map((link) => (
                 <li key={link}>
                   <a 
-                    href={`#${link.toLowerCase()}`} 
+                    href={link === "Contact" ? "#lead-form" : `#${link.toLowerCase()}`} 
                     className="text-sm text-slate-400 transition-colors hover:text-white"
                   >
                     {link}
@@ -41,11 +41,11 @@ export function Footer() {
             <ul className="mt-4 space-y-3">
               <li className="flex items-center gap-2 text-sm text-slate-400">
                 <Mail className="h-4 w-4" />
-                hello@localsitepro.com
+                <a href="mailto:hello@localsitepro.com" className="hover:text-white">hello@localsitepro.com</a>
               </li>
               <li className="flex items-center gap-2 text-sm text-slate-400">
                 <Phone className="h-4 w-4" />
-                (555) 123-4567
+                <a href="tel:+15551234567" className="hover:text-white">(555) 123-4567</a>
               </li>
               <li className="flex items-center gap-2 text-sm text-slate-400">
                 <MapPin className="h-4 w-4" />

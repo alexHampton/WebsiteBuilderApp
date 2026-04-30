@@ -108,19 +108,24 @@ export function PricingSection() {
                 <p className="text-xs text-muted-foreground">{plan.note}</p>
                 
                 <Button 
+                  asChild
                   className={`h-11 w-full rounded-lg ${plan.popular ? "bg-linear-to-r from-primary to-accent text-primary-foreground" : "bg-secondary text-secondary-foreground hover:bg-secondary/80"}`}
                   size="lg"
                 >
-                  {plan.cta}
+                  <a href="#lead-form">{plan.cta}</a>
                 </Button>
               </CardContent>
             </Card>
           ))}
         </div>
+
+        <div className="mx-auto mt-8 max-w-4xl rounded-xl border border-primary/20 bg-primary/5 px-4 py-3 text-center text-sm text-foreground/90">
+          30-day satisfaction promise. If you are not happy in the first month, we make it right.
+        </div>
         
         <p className="mt-8 text-center text-sm text-muted-foreground">
           Not sure which plan is right for you?{" "}
-          <a href="#" className="font-medium text-primary underline-offset-4 hover:underline">
+          <a href="#lead-form" className="font-medium text-primary underline-offset-4 hover:underline">
             Schedule a free consultation
           </a>
         </p>

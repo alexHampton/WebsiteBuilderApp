@@ -7,8 +7,11 @@ import { HowItWorksSection } from "@/components/landing/how-it-works-section"
 import { PricingSection } from "@/components/landing/pricing-section"
 import { AudienceSection } from "@/components/landing/audience-section"
 import { FAQSection } from "@/components/landing/faq-section"
+import { LeadFormSection } from "@/components/landing/lead-form-section"
 import { FinalCTASection } from "@/components/landing/final-cta-section"
 import { Footer } from "@/components/landing/footer"
+import { Button } from "@/components/ui/button"
+import { Phone } from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -31,9 +34,23 @@ export default function HomePage() {
         <section id="faq">
           <FAQSection />
         </section>
+        <LeadFormSection />
         <FinalCTASection />
       </main>
       <Footer />
+
+      <div className="fixed inset-x-3 bottom-3 z-50 md:hidden">
+        <div className="flex items-center gap-2 rounded-2xl border border-white/70 bg-background/95 p-2 shadow-2xl backdrop-blur-xl">
+          <Button asChild size="sm" className="h-10 flex-1 rounded-xl bg-linear-to-r from-primary to-accent text-primary-foreground">
+            <a href="#lead-form">Get Free Mockup</a>
+          </Button>
+          <Button asChild size="sm" variant="outline" className="h-10 rounded-xl border-white/70 bg-white/80 px-4">
+            <a href="tel:+15551234567" aria-label="Call now">
+              <Phone className="h-4 w-4" />
+            </a>
+          </Button>
+        </div>
+      </div>
     </div>
   )
 }

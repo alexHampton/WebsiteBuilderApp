@@ -25,20 +25,26 @@ export function FinalCTASection() {
           
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button 
+              asChild
               size="lg" 
               variant="secondary" 
               className="group h-11 gap-2 rounded-lg bg-white text-slate-900 shadow-lg transition-all hover:bg-white/90 hover:shadow-xl"
             >
-              Get My Free Mockup
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <a href="#lead-form">
+                Get My Free Mockup
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             <Button 
+              asChild
               size="lg" 
               variant="outline" 
               className="h-11 gap-2 rounded-lg border-white/30 bg-transparent text-base text-primary-foreground hover:bg-primary-foreground/10"
             >
-              <Phone className="h-4 w-4" />
-              Schedule a Call
+              <a href="#lead-form">
+                <Phone className="h-4 w-4" />
+                Schedule a Call
+              </a>
             </Button>
           </div>
           

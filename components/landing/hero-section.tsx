@@ -34,13 +34,17 @@ export function HeroSection() {
             </div>
             
             <div className="flex flex-col gap-4 pt-2 sm:flex-row">
-              <Button size="lg" className="group h-11 gap-2 rounded-lg bg-linear-to-r from-primary to-accent text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:shadow-xl hover:shadow-primary/35">
-                Get a Free Homepage Mockup
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              <Button asChild size="lg" className="group h-11 gap-2 rounded-lg bg-linear-to-r from-primary to-accent text-primary-foreground shadow-lg shadow-primary/30 transition-all hover:shadow-xl hover:shadow-primary/35">
+                <a href="#lead-form">
+                  Get My Free Mockup
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="h-11 gap-2 rounded-lg border-white/70 bg-white/80 shadow-sm backdrop-blur hover:bg-white">
-                <Play className="h-4 w-4" />
-                View Example
+              <Button asChild variant="outline" size="lg" className="h-11 gap-2 rounded-lg border-white/70 bg-white/80 shadow-sm backdrop-blur hover:bg-white">
+                <a href="#how-it-works">
+                  <Play className="h-4 w-4" />
+                  See How It Works
+                </a>
               </Button>
             </div>
             
@@ -58,6 +62,10 @@ export function HeroSection() {
                 Free mockup in 48 hours
               </div>
             </div>
+
+            <p className="text-sm text-muted-foreground/90">
+              Average launch in 14 days. Cancel anytime after your initial term.
+            </p>
           </div>
           
           {/* Right content - Website mockup */}

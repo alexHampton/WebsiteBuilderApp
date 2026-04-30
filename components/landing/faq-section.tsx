@@ -70,7 +70,7 @@ export function FAQSection() {
         <div className="mt-14 text-center">
           <p className="text-muted-foreground">
             Still have questions?{" "}
-            <a href="#" className="font-medium text-primary underline-offset-4 hover:underline">
+            <a href="#lead-form" className="font-medium text-primary underline-offset-4 hover:underline">
               Contact our team
             </a>
           </p>

@@ -41,10 +41,9 @@ export function Header() {
 
           {/* Desktop CTA */}
           <div className="hidden items-center gap-3 md:flex">
-            <Button variant="ghost" size="sm">
-              Log In
+            <Button asChild size="sm" className="shadow-sm shadow-primary/25">
+              <a href="#lead-form">Get Free Mockup</a>
             </Button>
-            <Button size="sm" className="shadow-sm shadow-primary/25">Get Started</Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -76,10 +75,12 @@ export function Header() {
                 </a>
               ))}
               <div className="flex flex-col gap-2 pt-4">
-                <Button variant="outline" size="sm">
-                  Log In
+                <Button asChild variant="outline" size="sm">
+                  <a href="#lead-form">Talk to Sales</a>
                 </Button>
-                <Button size="sm">Get Started</Button>
+                <Button asChild size="sm">
+                  <a href="#lead-form">Get Free Mockup</a>
+                </Button>
               </div>
             </div>
           </div>
