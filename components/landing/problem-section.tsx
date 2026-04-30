@@ -26,21 +26,21 @@ const problems = [
 
 export function ProblemSection() {
   return (
-    <section className="py-20 lg:py-28">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+    <section className="border-t border-border/60 py-24 lg:py-32">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="mx-auto max-w-3xl space-y-4 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary">
             Sound Familiar?
           </p>
-          <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem]">
             Is Your Website Holding You Back?
           </h2>
-          <p className="mt-4 text-pretty text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-pretty text-base leading-7 text-muted-foreground sm:text-lg">
             Most local service business websites have these same problems. The good news? They&apos;re all fixable.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
           {problems.map((problem, index) => (
             <Card 
               key={index} 

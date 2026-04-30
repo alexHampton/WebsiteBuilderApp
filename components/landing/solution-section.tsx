@@ -25,22 +25,22 @@ const benefits = [
 
 export function SolutionSection() {
   return (
-    <section className="bg-gradient-to-b from-primary/5 to-transparent py-20 lg:py-28">
-      <div className="container mx-auto px-4">
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+    <section className="bg-linear-to-b from-primary/5 via-primary/3 to-transparent py-24 lg:py-32">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
           {/* Left content */}
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+          <div className="space-y-5">
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary">
               The Solution
             </p>
-            <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem]">
               A Better Way to Handle Your Website
             </h2>
-            <p className="mt-4 text-pretty text-lg text-muted-foreground">
+            <p className="max-w-2xl text-pretty text-base leading-7 text-muted-foreground sm:text-lg">
               Forget expensive agencies, confusing DIY builders, or outdated templates. Our subscription model gives you a professional website with none of the hassle.
             </p>
             
-            <div className="mt-8 space-y-4">
+            <div className="space-y-4 pt-2">
               {benefits.map((benefit, index) => (
                 <div 
                   key={index} 
@@ -64,7 +64,7 @@ export function SolutionSection() {
           <div className="relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Main card */}
-              <div className="rounded-2xl border bg-card p-8 shadow-xl">
+              <div className="rounded-[1.75rem] border bg-card p-8 shadow-xl shadow-primary/10">
                 <div className="text-center">
                   <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
                     <Check className="h-8 w-8 text-primary" />

@@ -12,9 +12,11 @@ import { Footer } from "@/components/landing/footer"
 
 export default function HomePage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col bg-background">
       <Header />
-      <main>
+      <main className="relative isolate flex-1 overflow-hidden">
+        <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[34rem] bg-[radial-gradient(circle_at_top,_rgba(99,102,241,0.16),_transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-[38rem] -z-10 h-[28rem] bg-[radial-gradient(circle_at_center,_rgba(99,102,241,0.08),_transparent_65%)]" />
         <HeroSection />
         <ProblemSection />
         <SolutionSection />

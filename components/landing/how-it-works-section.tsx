@@ -29,21 +29,21 @@ const steps = [
 
 export function HowItWorksSection() {
   return (
-    <section className="bg-gradient-to-b from-muted/50 to-transparent py-20 lg:py-28">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+    <section className="bg-gradient-to-b from-muted/60 to-transparent py-24 lg:py-32">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="mx-auto max-w-3xl space-y-4 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary">
             How It Works
           </p>
-          <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem]">
             Simple Process, Amazing Results
           </h2>
-          <p className="mt-4 text-pretty text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-pretty text-base leading-7 text-muted-foreground sm:text-lg">
             Getting started is easy. We&apos;ve streamlined everything so you can have a new website without any stress.
           </p>
         </div>
 
-        <div className="mt-16">
+        <div className="mt-14 lg:mt-16">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, index) => (
               <div key={index} className="relative">

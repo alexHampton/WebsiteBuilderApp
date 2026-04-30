@@ -45,21 +45,21 @@ const plans = [
 
 export function PricingSection() {
   return (
-    <section id="pricing" className="py-20 lg:py-28">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+    <section id="pricing" className="border-t border-border/60 py-24 lg:py-32">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="mx-auto max-w-3xl space-y-4 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary">
             Pricing
           </p>
-          <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem]">
             Transparent Pricing, No Surprises
           </h2>
-          <p className="mt-4 text-pretty text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-pretty text-base leading-7 text-muted-foreground sm:text-lg">
             Choose the plan that works best for your business. Both include a professional, lead-generating website.
           </p>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-4xl gap-8 lg:grid-cols-2">
+        <div className="mx-auto mt-14 grid max-w-5xl gap-8 lg:mt-16 lg:grid-cols-2">
           {plans.map((plan, index) => (
             <Card 
               key={index} 

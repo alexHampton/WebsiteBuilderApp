@@ -34,21 +34,21 @@ const faqs = [
 
 export function FAQSection() {
   return (
-    <section className="py-20 lg:py-28">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary">
+    <section className="border-t border-border/60 py-24 lg:py-32">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="mx-auto max-w-3xl space-y-4 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-primary">
             FAQ
           </p>
-          <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem]">
             Frequently Asked Questions
           </h2>
-          <p className="mt-4 text-pretty text-lg text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-pretty text-base leading-7 text-muted-foreground sm:text-lg">
             Got questions? We&apos;ve got answers. If you don&apos;t see what you&apos;re looking for, feel free to reach out.
           </p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-3xl">
+        <div className="mx-auto mt-14 max-w-3xl lg:mt-16">
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem 
@@ -67,7 +67,7 @@ export function FAQSection() {
           </Accordion>
         </div>
         
-        <div className="mt-12 text-center">
+        <div className="mt-14 text-center">
           <p className="text-muted-foreground">
             Still have questions?{" "}
             <a href="#" className="font-medium text-primary underline-offset-4 hover:underline">

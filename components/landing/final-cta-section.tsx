@@ -5,18 +5,18 @@ import { Button } from "@/components/ui/button"
 
 export function FinalCTASection() {
   return (
-    <section className="relative overflow-hidden bg-primary py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-primary py-24 lg:py-32">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:40px_40px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-size-[40px_40px]" />
       </div>
       
-      <div className="container relative mx-auto px-4">
+      <div className="container relative mx-auto px-4 sm:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-balance text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl lg:text-5xl">
+          <h2 className="text-balance text-3xl font-bold tracking-tight text-primary-foreground sm:text-4xl lg:text-[3.5rem] lg:leading-[1.05]">
             Stop Losing Jobs Because of a Weak Website
           </h2>
-          <p className="mt-6 text-pretty text-lg text-primary-foreground/80">
+          <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-8 text-primary-foreground/80">
             Your competitors are getting the calls that should be coming to you. A professional website isn&apos;t a luxury anymore—it&apos;s how your customers find and trust you.
           </p>
           
@@ -39,7 +39,7 @@ export function FinalCTASection() {
             </Button>
           </div>
           
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-primary-foreground/70">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm text-primary-foreground/70">
             <div className="flex items-center gap-2">
               <div className="h-2 w-2 rounded-full bg-green-400" />
               Free mockup, no obligation
