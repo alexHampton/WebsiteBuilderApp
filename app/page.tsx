@@ -13,11 +13,11 @@ import { Footer } from "@/components/landing/footer"
 import { Button } from "@/components/ui/button"
 import { Phone } from "lucide-react"
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://localsitepro.com"
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://callforge.com"
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: "LocalSite Pro",
+  name: "Call Forge",
   url: siteUrl,
   telephone: "+1-555-123-4567",
   email: "hello@localsitepro.com",

@@ -13,9 +13,9 @@
   <rect width="1200" height="630" fill="url(#bg)"/>
   <rect x="76" y="70" width="1048" height="490" rx="30" fill="white" fill-opacity="0.06"/>
   <rect x="110" y="140" width="160" height="160" rx="24" fill="url(#brand)"/>
-  <text x="190" y="236" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="700">LS</text>
+  <text x="190" y="236" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="700">CF</text>
 
-  <text x="300" y="210" fill="white" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="700">LocalSite Pro</text>
+  <text x="300" y="210" fill="white" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="700">Call Forge</text>
   <text x="300" y="285" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="500">Websites for local service businesses</text>
   <text x="300" y="350" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="400">Built, hosted, and optimized to get you more calls</text>
 

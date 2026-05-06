@@ -9,9 +9,9 @@ export function Footer() {
           <div className="md:col-span-2">
             <a href="/" className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-primary to-accent">
-                <span className="text-sm font-bold text-primary-foreground">LS</span>
+                <span className="text-sm font-bold text-primary-foreground">CF</span>
               </div>
-              <span className="text-lg font-semibold text-white">LocalSite Pro</span>
+              <span className="text-lg font-semibold text-white">Call Forge</span>
             </a>
             <p className="mt-4 max-w-md text-sm text-slate-400">
               Professional websites for local service businesses. We build, host, and manage everything so you can focus on what you do best.
@@ -57,7 +57,7 @@ export function Footer() {
         
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 md:flex-row">
           <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} LocalSite Pro. All rights reserved.
+            © {new Date().getFullYear()} Call Forge. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-slate-500">
             <a href="#" className="hover:text-white">Privacy Policy</a>
