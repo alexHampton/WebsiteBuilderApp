@@ -14,13 +14,13 @@ export function HeroSection() {
         <div className="grid items-center gap-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-20">
           {/* Left content */}
           <div className="flex flex-col gap-7">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-white/80 px-4 py-2 text-sm font-medium text-primary shadow-sm backdrop-blur">
+            {/* <div className="inline-flex w-fit items-center gap-2 rounded-full border border-primary/20 bg-white/80 px-4 py-2 text-sm font-medium text-primary shadow-sm backdrop-blur">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"></span>
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"></span>
               </span>
               Trusted by 500+ local businesses
-            </div>
+            </div> */}
             
             <div className="space-y-5">
               <h1 className="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-foreground sm:text-5xl lg:text-[4.2rem] lg:leading-[1.02]">
@@ -144,7 +144,7 @@ export function HeroSection() {
               
               <div className="absolute -right-4 -top-4 flex items-center gap-2 rounded-lg border border-white/80 bg-card/90 px-3 py-2 shadow-lg backdrop-blur">
                 <BarChart3 className="h-4 w-4 text-primary" />
-                <span className="text-sm font-medium">+127% More Leads</span>
+                {/* <span className="text-sm font-medium">+127% More Leads</span> */}
               </div>
             </div>
           </div>

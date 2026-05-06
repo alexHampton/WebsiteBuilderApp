@@ -13,10 +13,39 @@ import { Footer } from "@/components/landing/footer"
 import { Button } from "@/components/ui/button"
 import { Phone } from "lucide-react"
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://localsitepro.com"
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "LocalSite Pro",
+  url: siteUrl,
+  telephone: "+1-555-123-4567",
+  email: "hello@localsitepro.com",
+  areaServed: "United States",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Denver",
+    addressRegion: "CO",
+    addressCountry: "US",
+  },
+  description:
+    "Done-for-you website design, hosting, and ongoing support for local service businesses.",
+  serviceType: [
+    "Website design",
+    "Website hosting",
+    "Website maintenance",
+    "Lead generation website optimization",
+  ],
+}
+
 export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       <main className="relative isolate flex-1 overflow-hidden">
         <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[34rem] bg-[radial-gradient(circle_at_top,_rgba(99,102,241,0.16),_transparent_60%)]" />
         <div className="pointer-events-none absolute inset-x-0 top-[38rem] -z-10 h-[28rem] bg-[radial-gradient(circle_at_center,_rgba(99,102,241,0.08),_transparent_65%)]" />
