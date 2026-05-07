@@ -130,7 +130,7 @@ export function HeroSection() {
                     </div>
                     <div className="flex items-center gap-1">
                       <MapPin className="h-3 w-3" />
-                      Denver, CO
+                      Dayton, OH
                     </div>
                   </div>
                 </div>

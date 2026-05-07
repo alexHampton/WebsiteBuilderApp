@@ -20,12 +20,12 @@ const localBusinessSchema = {
   name: "Call Forge",
   url: siteUrl,
   telephone: "+1-555-123-4567",
-  email: "hello@localsitepro.com",
+  email: "info@getcallforge.com",
   areaServed: "United States",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Denver",
-    addressRegion: "CO",
+    addressLocality: "Dayton",
+    addressRegion: "OH",
     addressCountry: "US",
   },
   description:
@@ -73,11 +73,11 @@ export default function HomePage() {
           <Button asChild size="sm" className="h-10 flex-1 rounded-xl bg-linear-to-r from-primary to-accent text-primary-foreground">
             <a href="#lead-form">Get Free Mockup</a>
           </Button>
-          <Button asChild size="sm" variant="outline" className="h-10 rounded-xl border-white/70 bg-white/80 px-4">
+          {/* <Button asChild size="sm" variant="outline" className="h-10 rounded-xl border-white/70 bg-white/80 px-4">
             <a href="tel:+15551234567" aria-label="Call now">
               <Phone className="h-4 w-4" />
             </a>
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>

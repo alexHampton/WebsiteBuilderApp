@@ -41,15 +41,15 @@ export function Footer() {
             <ul className="mt-4 space-y-3">
               <li className="flex items-center gap-2 text-sm text-slate-400">
                 <Mail className="h-4 w-4" />
-                <a href="mailto:hello@localsitepro.com" className="hover:text-white">hello@localsitepro.com</a>
+                <a href="mailto:info@getcallforge.com" className="hover:text-white">info@getcallforge.com</a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-slate-400">
+              {/* <li className="flex items-center gap-2 text-sm text-slate-400">
                 <Phone className="h-4 w-4" />
                 <a href="tel:+15551234567" className="hover:text-white">(555) 123-4567</a>
-              </li>
+              </li> */}
               <li className="flex items-center gap-2 text-sm text-slate-400">
                 <MapPin className="h-4 w-4" />
-                Denver, Colorado
+                Dayton, Ohio
               </li>
             </ul>
           </div>

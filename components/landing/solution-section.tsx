@@ -101,10 +101,10 @@ export function SolutionSection() {
               </div>
               
               {/* Floating badge */}
-              <div className="absolute -bottom-4 -right-4 rounded-lg border bg-card px-4 py-2 shadow-lg">
+              {/* <div className="absolute -bottom-4 -right-4 rounded-lg border bg-card px-4 py-2 shadow-lg">
                 <div className="text-xs text-muted-foreground">Customer satisfaction</div>
                 <div className="font-bold text-primary">98% Happy Clients</div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
