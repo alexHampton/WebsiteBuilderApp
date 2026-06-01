@@ -20,7 +20,7 @@ const localBusinessSchema = {
   name: "Call Forge",
   url: siteUrl,
   telephone: "+1-555-123-4567",
-  email: "info@getcallforge.com",
+  email: "hello@getcallforge.com",
   areaServed: "United States",
   address: {
     "@type": "PostalAddress",
